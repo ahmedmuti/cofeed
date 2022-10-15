@@ -1,0 +1,1 @@
+export let baseUrl="https://63498a46a59874146b227f68.mockapi.io/api/v1/"

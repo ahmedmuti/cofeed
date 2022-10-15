@@ -1,0 +1,33 @@
+<div id="sidebar" class="container">
+
+    <div class=" py-4 d-flex justify-content-between">
+        <div class="search position-relative">
+            <input type="text" placeholder="Search" class="form-control">
+            <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+        </div>
+        <div class="icons d-flex justify-content-around">
+            <div class="notifications position-relative mx-3"><i class="fa-solid fa-bell"></i></div>
+            <div class="upload"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+        </div>
+    </div>
+
+
+    <div class="my-4 d-flex justify-content-between">
+        <span class="suggestions">Suggestions For You</span>
+        <span class="mainColor seeAll">See All</span>
+    </div>
+
+    <div class="followers">
+        <div *ngFor="let Follower of Followers ;let i=index" class="d-flex justify-content-between my-3">
+            <div class="person"><img src="assets/logo.png" alt=""></div>
+            <div>
+                <h5>Sarah Tancredi</h5><span>@dr.sarah</span>
+            </div>
+            <div>
+                <button [class.clicked]="Followers[i].isFollow" (click)="setIndex(i)"
+                    class="btn">{{Followers[i].isFollow?'Followed':'Follow'}}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

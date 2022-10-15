@@ -1,0 +1,19 @@
+<div class="feed-card">
+    <div class="img card-shadow">
+        <img [src]="item.feedUrl" class="w-100" alt="">
+    </div>
+    <div class="row my-3">
+        <div class="col-md-12  d-flex justify-content-between">
+            <div class="person  ms-3 d-flex">
+                <img width="35" height="35" class="rounded-circle" [src]="item.avatar" alt="">
+                <span class="person-name ms-3">{{item.name}}</span>
+            </div>
+            <div class="reactions">
+                <span (click)="likeEvent(item.id,item.isLike,item.likes)" [ngClass]="item.isLike ? 'liked' : ''"><i
+                        class="fa-solid fa-heart"></i>
+                    <span class="count">{{item.likes}}</span></span>
+                <span><i class="fa-solid fa-comment-dots"></i> {{item.comments}}</span>
+            </div>
+        </div>
+    </div>
+</div>

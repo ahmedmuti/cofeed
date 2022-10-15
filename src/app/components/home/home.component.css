@@ -1,0 +1,18 @@
+.feeds,
+.clicked {
+  font-weight: bold !important;
+}
+.feeds {
+  color: #3e3e8d;
+  font-size: 20px;
+}
+.links span {
+  color: #acbacf;
+  padding: 0 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clicked {
+  color: #a974ff !important;
+}

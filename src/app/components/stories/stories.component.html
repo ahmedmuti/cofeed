@@ -1,0 +1,15 @@
+<div class="container">
+    <p *ngIf="stories.length==0" class="text-center my-3 Loading">Loading....</p>
+    <div id="stories" class="owl-carousel text-center d-flex justify-content-between">
+        <div *ngFor="let story of stories" class="story py-3">
+            <div class="person">
+                <img [src]="story.avatar" alt="">
+                <div class="overlay d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <div class="person-name">
+                <h5>{{story.name}}</h5>
+            </div>
+        </div>
+    </div>
+</div>

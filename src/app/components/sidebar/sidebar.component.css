@@ -1,0 +1,107 @@
+.search input,
+.icons > div {
+  border: 1px solid #bdc2ca;
+}
+.search i,
+input::placeholder,
+.icons > div i {
+  color: #bdc2ca;
+}
+.search {
+  width: 100% !important;
+}
+.search input {
+  border-radius: 25px;
+  padding: 15px 10px;
+}
+.search i {
+  top: 34%;
+  left: 17px;
+  font-size: 20px;
+}
+input::placeholder {
+  text-align: center;
+}
+
+.icons > div {
+  width: 56px;
+  height: 56px;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons > div i {
+  font-size: 19px;
+  cursor: pointer;
+}
+.icons .notifications i::after {
+  position: absolute;
+  content: "";
+  top: 16px;
+  left: 29px;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  border-radius: 50%;
+}
+.icons .upload {
+  background-color: #0086ffad;
+  border: 0;
+  -webkit-box-shadow: 0px 4px 31px -3px rgba(158, 175, 250, 1);
+  -moz-box-shadow: 0px 4px 31px -3px rgba(158, 175, 250, 1);
+  box-shadow: 0px 4px 31px -3px rgba(158, 175, 250, 1);
+}
+.icons .upload i {
+  color: #fff;
+}
+.suggestions {
+  color: #3e3e8d;
+}
+.seeAll,
+.suggestions {
+  font-size: 19px !important;
+  font-weight: bold;
+}
+
+.person {
+  border: 2px solid #a299b05e;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  position: relative;
+}
+
+.person img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.followers h5 {
+  font-size: 16px;
+  color: #3e3e8d;
+  font-weight: 700;
+  margin: 0;
+}
+.followers span {
+  color: #bdc2ca;
+  font-size: 13px;
+}
+
+.followers button {
+  background-color: #a974ff;
+  color: #fff;
+  padding: 8px 20px;
+}
+
+.clicked {
+  background-color: transparent !important;
+  border: 1px solid #bdc2ca;
+  color: #3e3e8d !important;
+  font-weight: 600;
+}

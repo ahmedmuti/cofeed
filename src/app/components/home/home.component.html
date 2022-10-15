@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row my-4">
+        <div class="col-md-12 d-flex justify-content-between">
+            <span class="feeds">Feeds</span>
+            <div class="links text-end">
+                <span (click)="sort(link)" *ngFor="let link of links ;let i=index" [class.clicked]="selectedIndex === i"
+                    (click)="setIndex(i)">{{link}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div *ngIf="feeds.length==0" class="col-md-12">
+            <p class="text-center my-3 Loading">Loading...</p>
+        </div>
+        <div *ngFor="let feed of feeds" class="col-md-6">
+            <app-feed-card [item]="feed"></app-feed-card>
+        </div>
+
+    </div>
+</div>
